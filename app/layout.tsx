@@ -1,8 +1,8 @@
+import * as Sentry from "@sentry/nextjs";
 import type { Metadata } from "next";
 import "./globals.css";
 import { Plus_Jakarta_Sans as FontSans } from "next/font/google";
 import { ThemeProvider } from "next-themes";
-import * as Sentry from "@sentry/nextjs";
 
 import { cn } from "@/lib/utils";
 
