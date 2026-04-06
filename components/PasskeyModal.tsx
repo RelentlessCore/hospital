@@ -23,26 +23,25 @@ import { decryptKey, encryptKey } from "@/lib/utils";
 export const PasskeyModal = () => {
   const router = useRouter();
   const path = usePathname();
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
   const [passkey, setPasskey] = useState("");
   const [error, setError] = useState("");
 
-  const encryptedKey =
-    typeof window !== "undefined"
-      ? window.localStorage.getItem("accessKey")
-      : null;
-
   useEffect(() => {
+    const encryptedKey =
+      typeof window !== "undefined"
+        ? window.localStorage.getItem("accessKey")
+        : null;
+
     const accessKey = encryptedKey && decryptKey(encryptedKey);
 
-    if (path)
-      if (accessKey === process.env.NEXT_PUBLIC_ADMIN_PASSKEY!.toString()) {
-        setOpen(false);
-        router.push("/admin");
-      } else {
-        setOpen(true);
-      }
-  }, [encryptedKey]);
+    if (accessKey === process.env.NEXT_PUBLIC_ADMIN_PASSKEY!.toString()) {
+      setOpen(false);
+      router.push("/admin");
+    } else {
+      setOpen(true);
+    }
+  }, [path]);
 
   const closeModal = () => {
     setOpen(false);
