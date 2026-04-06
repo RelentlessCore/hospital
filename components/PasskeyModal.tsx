@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { usePathname, useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 
 import {
@@ -20,28 +20,32 @@ import {
 } from "@/components/ui/input-otp";
 import { decryptKey, encryptKey } from "@/lib/utils";
 
-export const PasskeyModal = () => {
+export const PasskeyModal = ({ isAdmin }: { isAdmin: boolean }) => {
   const router = useRouter();
-  const path = usePathname();
-  const [open, setOpen] = useState(true);
+  const searchParams = useSearchParams();
+  const [open, setOpen] = useState(false);
   const [passkey, setPasskey] = useState("");
   const [error, setError] = useState("");
 
   useEffect(() => {
-    const encryptedKey =
-      typeof window !== "undefined"
-        ? window.localStorage.getItem("accessKey")
-        : null;
+    const adminParam = searchParams.get("admin");
 
-    const accessKey = encryptedKey && decryptKey(encryptedKey);
+    if (adminParam === "true") {
+      const encryptedKey =
+        typeof window !== "undefined"
+          ? window.localStorage.getItem("accessKey")
+          : null;
 
-    if (accessKey === process.env.NEXT_PUBLIC_ADMIN_PASSKEY!.toString()) {
-      setOpen(false);
-      router.push("/admin");
-    } else {
-      setOpen(true);
+      const accessKey = encryptedKey && decryptKey(encryptedKey);
+
+      if (accessKey === process.env.NEXT_PUBLIC_ADMIN_PASSKEY!.toString()) {
+        setOpen(false);
+        router.push("/admin");
+      } else {
+        setOpen(true);
+      }
     }
-  }, [path]);
+  }, [searchParams]);
 
   const closeModal = () => {
     setOpen(false);
