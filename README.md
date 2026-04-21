@@ -49,9 +49,9 @@ To access the admin dashboard, click the "Admin" link at the bottom of the homep
 
 ## 🎯 The Problem It Solves
 
-Have you ever spent hours waiting for a doctor's appointment, unsure if it was even confirmed? HealthDesk eliminates that frustration entirely.
+Booking and managing doctor appointments is often slow and unclear. Patients don’t always know if their request went through, and administrators end up handling everything manually across different tools.
 
-Patients get a streamlined registration and booking experience with SMS confirmations sent straight to their phone. Administrators manage the full appointment lifecycle from a single intuitive dashboard. The result: fewer missed appointments, shorter wait times, and happier patients.
+HealthDesk simplifies this process with a clear registration and booking flow, real-time SMS confirmations, and a centralized admin dashboard to manage appointments efficiently. The result is better visibility, fewer missed appointments, and a smoother experience for both patients and staff.
 
 ---
 
