@@ -14,7 +14,7 @@ const fontSans = FontSans({
 
 export function generateMetadata(): Metadata {
   return {
-    title: "CarePulse",
+    title: "HealthDesk",
     description:
       "A healthcare patient management System designed to streamline patient registration, appointment scheduling, and medical records management for healthcare providers.",
     icons: {
