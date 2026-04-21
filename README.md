@@ -83,65 +83,29 @@ HealthDesk simplifies this process with a clear registration and booking flow, r
 
 ## 📸 Screenshots
 
-### **Patient Welcome Page**
-The entry point where patients begin their registration journey.
+### **Patient Registration**
+![Patient Registration](./screenshots/patient-registration.png)
 
-<!-- UPLOAD SCREENSHOT HERE: Homepage showing CarePulse logo, "Hi there 👋", name/email/phone fields, Get Started button, and doctor image on the right -->
-![Patient Welcome Page](your-image-url-here)
+### **Admin Access Verification**
+![Admin Verification](./screenshots/admin-access-verification.png)
 
-### **Multi-Step Registration Form**
-Comprehensive patient information collection with personal, medical, and identification sections.
+### **Medical History Form**
+![Medical Form](./screenshots/medical-history-form.png)
 
-<!-- UPLOAD SCREENSHOT HERE: Registration page showing "Welcome 👋", Personal Information section with name/email/phone/date of birth/gender/address/occupation fields -->
-![Registration Form - Personal Info](your-image-url-here)
+### **Appointment Booking**
+![Booking](./screenshots/appointment-booking.png)
 
-<!-- UPLOAD SCREENSHOT HERE: Registration page scrolled down showing Medical Information section with primary physician dropdown, insurance fields, allergies, and medical history -->
-![Registration Form - Medical Info](your-image-url-here)
-
-<!-- UPLOAD SCREENSHOT HERE: Registration page scrolled down to Identification and Verification section with ID type dropdown, ID number, and file upload area -->
-![Registration Form - Identification](your-image-url-here)
-
-### **Appointment Booking Interface**
-Doctor selection, date and time picker, and reason capture in a clean layout.
-
-<!-- UPLOAD SCREENSHOT HERE: New Appointment page showing doctor dropdown, expected appointment date picker, appointment reason and comments/notes text areas, Submit Appointment button -->
-![Appointment Booking](your-image-url-here)
-
-### **Success Confirmation Page**
-Elegant confirmation with appointment details and doctor information.
-
-<!-- UPLOAD SCREENSHOT HERE: Success page showing "Your appointment request has been successfully submitted!" with the animated success badge, requested appointment details (doctor + date), and New Appointment button -->
-![Success Confirmation](your-image-url-here)
-
-### **Admin Passkey Modal**
-OTP-based verification gate before accessing the admin dashboard.
-
-<!-- UPLOAD SCREENSHOT HERE: Passkey modal on the homepage with "Admin Access Verification" title, 6 empty OTP slots, and "Enter Admin Passkey" button -->
-![Admin Passkey Modal](your-image-url-here)
+### **Confirmation Screen**
+![Confirmation](./screenshots/confirmation-screen.png)
 
 ### **Admin Dashboard**
-Real-time statistics cards with a paginated appointment data table.
+![Admin Dashboard](./screenshots/admin-dashboard.png)
 
-<!-- UPLOAD SCREENSHOT HERE: Full admin dashboard showing "Welcome 👋", the 3 stat cards (Scheduled / Pending / Cancelled) with real numbers, and the data table below with patient rows, status badges, appointments, doctors, and Schedule/Cancel actions -->
-![Admin Dashboard](your-image-url-here)
+### **Schedule & Cancel Appointments**
+![Admin Actions](./screenshots/schedule-cancel-appointments.png)
 
-### **Schedule Appointment Modal**
-Contextual form with pre-populated data for efficient admin workflows.
-
-<!-- UPLOAD SCREENSHOT HERE: Schedule Appointment modal (after clicking Schedule action) showing the doctor dropdown pre-filled, date/time picker, reason, and notes fields -->
-![Schedule Appointment Modal](your-image-url-here)
-
-### **Cancel Appointment Modal**
-Cancellation workflow with reason tracking.
-
-<!-- UPLOAD SCREENSHOT HERE: Cancel Appointment modal showing the cancellation reason text area and red Cancel Appointment button -->
-![Cancel Appointment Modal](your-image-url-here)
-
-### **SMS Notification**
-Real-time SMS confirmation delivered to the patient's phone.
-
-<!-- UPLOAD SCREENSHOT HERE: Phone screenshot showing the received SMS from Twilio with the appointment confirmation text (doctor name + date + time) -->
-![SMS Notification](your-image-url-here)
+### **Application Interface**
+![Interface](./screenshots/application-interface.png)
 
 ---
 
