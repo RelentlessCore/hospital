@@ -107,6 +107,9 @@ HealthDesk simplifies this process with a clear registration and booking flow, r
 ### **Application Interface**
 ![Interface](./screenshots/application-interface.png)
 
+### **Multiple Devices view**
+![Patient Registration](./screenshots/multiple-devices-view.png)
+
 ---
 
 ## 🚀 Why This Stands Out
